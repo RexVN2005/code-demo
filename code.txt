@@ -1,0 +1,28 @@
+Program GIAI_HE_PT_BAC_NHAT_HAI_AN;
+Uses crt;
+Var a,b,c,d,m,n:real;
+dx,dy,dd:real;
+Begin
+Clrscr;
+Writeln(' GIAI HE PHUONG TRINH BAC NHAT HAI AN:');
+Writeln('----------------------------------');
+Write('Nhap a=');readln(a);
+Write('Nhap b=');readln(b);
+Write('Nhap m=');readln(m);
+Write('Nhap c=');readln(c);
+Write('Nhap d=');readln(d);
+Write('Nhap n=');readln(n);
+dd:=a*d-b*c;
+dx:=m*d-b*n;
+dy:=a*n-c*m;
+If dd=0 then
+If (dx=0) and (dy=0) then
+Writeln('He vo so nghiem hoac vo nghiem')
+Else writeln('He vo nghiem')
+Else
+Begin
+Write('He co nghiem :');
+Writeln('x=',dx/dd:4:2,' va y=',dy/dd:4:2);
+End;
+Readln;
+End.
